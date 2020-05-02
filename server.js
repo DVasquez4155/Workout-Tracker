@@ -19,7 +19,7 @@ app.use(express.static("public"));
 var uristring =
 process.env.MONGOLAB_URI ||
 process.env.MONGOHQ_URL ||
-'mongodb://localhost/HelloMongoose';
+'mongodb://localhost/workout';
 
 mongoose.connect(uristring, function (err, res) {
     if (err) {
